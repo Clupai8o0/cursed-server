@@ -1,0 +1,28 @@
+{
+	"name": "cursed-server",
+	"version": "1.0.0",
+	"description": "The express server for cursed website",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "env-cmd -f ./config/dev.env nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Clupai8o0/cursed-server.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Clupai8o0/cursed-server/issues"
+	},
+	"homepage": "https://github.com/Clupai8o0/cursed-server#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongodb": "^4.1.0"
+	},
+	"devDependencies": {
+		"env-cmd": "^10.1.0",
+		"nodemon": "^2.0.12"
+	}
+}
