@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 const idGenerator = require("./algorithm");
+
+app.use(cors());
 
 //* database
 const mongodb = require("mongodb");
