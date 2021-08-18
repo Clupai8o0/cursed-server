@@ -3,8 +3,6 @@ const cors = require("cors");
 const path = require("path");
 const idGenerator = require("./algorithm");
 
-app.use(cors());
-
 //* database
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
@@ -29,6 +27,7 @@ const port = process.env.PORT;
 const publicDirPath = path.join(__dirname, "../public");
 app.use(express.static(publicDirPath));
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 app.get("/adventures", async (req, res) => {
 	const adventures = await db.collection("adventures").find({}).toArray();
