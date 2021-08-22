@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const idGenerator = require("./algorithm");
+const bodyParser = require("body-parser");
 
 //* database
 const mongodb = require("mongodb");
@@ -25,9 +26,10 @@ MongoClient.connect(
 const app = express();
 const port = process.env.PORT;
 const publicDirPath = path.join(__dirname, "../public");
+app.use(cors());
 app.use(express.static(publicDirPath));
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(bodyParser.json());
 
 app.get("/adventures", async (req, res) => {
 	const adventures = await db.collection("adventures").find({}).toArray();
@@ -58,7 +60,17 @@ app.delete("/item/:id", async (req, res) => {
 });
 
 app.post("/adventure/add", async (req, res) => {
+	console.log(req.body)
 	const { name, description, level, time, money, xp, url } = req.body;
+	if (
+		name === undefined ||
+		description === undefined ||
+		level === undefined ||
+		xp === undefined ||
+		url === undefined ||
+		money === undefined
+	)
+    res.status(500).send("Invaid datatype (There are null values)");
 	const adventure = {
 		name,
 		description,
@@ -79,7 +91,9 @@ app.post("/adventure/add", async (req, res) => {
 		url,
 	};
 	await db.collection("adventures").insertOne(adventure);
-	res.status(200).redirect("/");
+	res.status(200).send({
+		status: "success"
+	});
 });
 
 app.get("*", (req, res) => {
