@@ -1,0 +1,120 @@
+{
+  "player_data": {
+    "id": 0,
+    "character_name": "",
+    "gender": "",
+    "info": "",
+    "titles": [],
+    "friends": [],
+    "marriage": {},
+    "guild": null,
+    "state": {
+      "action": "idle",
+      "info": null
+    },
+    "class": null,
+    "xp": 0,
+    "sub_class": {},
+    "element": {
+      "type": null,
+      "xp": 0
+    },
+    "special_element": {},
+    "spirit": {},
+    "inventory": [],
+    "money": 10,
+    "equipment": {
+      "weapon": {
+        "right_hand": null,
+        "left_hand": null
+      },
+      "armour": {
+        "arms": null,
+        "body": null,
+        "head": null,
+        "legs": null,
+        "feet": null
+      }
+    },
+    "status": {
+      "atk": 0,
+      "def": 0,
+      "spd": 0,
+      "health": 100
+    }
+  },
+  "guild": {
+    "name": "",
+    "id": "",
+    "info": "All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.",
+    "xp": 0,
+    "bank": 0,
+    "members": [
+      {
+        "name": "",
+        "id": 0,
+        "position": "Master"
+      }
+    ],
+    "logo": "",
+    "img": []
+  },
+  "item": {
+    "name": "",
+    "id": "",
+    "type": "",
+    "feature": {
+      "feature": "",
+      "duo": false
+    },
+    "value": 0,
+    "durability": 0,
+    "atk": 0,
+    "def": 0,
+    "spd": 0,
+    "description": "",
+    "url": "",
+    "duplicate": {
+      "name": "",
+      "id": "",
+      "type": "",
+      "value": 0,
+      "feature": {
+        "feature": "",
+        "duo": false
+      },
+      "durability": 0,
+      "atk": 0,
+      "def": 0,
+      "spd": 0
+    }
+  },
+  "adventure": {
+    "name": "",
+    "id": "",
+    "description": "",
+    "requirements": {
+      "level": 0,
+      "time": 0,
+      "atk": 0,
+      "def": 0
+    },
+    "reward": {
+      "money": 0,
+      "xp": 0
+    },
+    "url": "",
+    "events": [
+      {
+        "id": "0000",
+        "type": "tournament/special/main/adventure/war",
+        "time": ""
+      }
+    ]
+  },
+  "paragraphs": [
+    "She tried to explain that love wasn't like pie. There wasn't a set number of slices to be given out. There wasn't less to be given to one person if you wanted to give more to another. That after a set amount was given out it would all disappear. She tried to explain this, but it fell on deaf ears.",
+    "The words hadn't flowed from his fingers for the past few weeks. He never imagined he'd find himself with writer's block, but here he sat with a blank screen in front of him. That blank screen taunting him day after day had started to play with his mind. He didn't understand why he couldn't even type a single word, just one to begin the process and build from there. And yet, he already knew that the eight hours he was prepared to sit in front of his computer today would end with the screen remaining blank.",
+    "It was that terrifying feeling you have as you tightly hold the covers over you with the knowledge that there is something hiding under your bed. You want to look, but you don't at the same time. You're frozen with fear and unable to act. That's where she found herself and she didn't know what to do next"
+  ]
+}
