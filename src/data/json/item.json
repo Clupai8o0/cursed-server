@@ -1,0 +1,24 @@
+{
+  "types": [
+    {
+      "name": "Sword",
+      "description": "Mostly focused on attack and speed",
+      "id": "a"
+    },
+    { "name": "Shield", "description": "Mostly focused on defence", "id": "b" }
+  ],
+  "weapon": ["sword", "shield"],
+  "armour": [],
+  "features": {
+    "sword": [
+      { "feature": "normal", "duo": false, "id": "a" },
+      { "feature": "normal", "duo": true, "id": "A" },
+      { "feature": "long", "duo": false, "id": "b" },
+      { "feature": "long", "duo": true, "id": "B" },
+      { "feature": "short", "duo": false, "id": "C" },
+      { "feature": "short", "duo": true, "id": "C" },
+      { "feature": "unique", "duo": false, "id": "u" },
+      { "feature": "unique", "duo": true, "id": "U" }
+    ]
+  }
+}

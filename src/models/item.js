@@ -32,7 +32,7 @@ const itemSchema = new mongoose.Schema({
     lowercase: true,
     required: true,
     validate: (value) => {
-      const jsonData = JSON.parse(fs.readFileSync("src/data/item.json"));
+      const jsonData = JSON.parse(fs.readFileSync("src/data/json/item.json"));
       if (
         jsonData.types.filter((type) => {
           return type.name.toLowerCase() === value.toLowerCase();

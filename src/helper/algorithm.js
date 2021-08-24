@@ -36,7 +36,7 @@ const AdventureId = (level, adventures) => {
 };
 
 const ItemId = (type = "", feature = "", duo = false, items = []) => {
-  const data = JSON.parse(fs.readFileSync("src/data/item.json"));
+  const data = JSON.parse(fs.readFileSync("src/data/json/item.json"));
 
   //* type
   let mark = "";
@@ -77,7 +77,7 @@ const ItemId = (type = "", feature = "", duo = false, items = []) => {
 };
 
 const itemFeature = (type = "", feature = "", duo = false) => {
-  const data = JSON.parse(fs.readFileSync("src/data/item.json"));
+  const data = JSON.parse(fs.readFileSync("src/data/json/item.json"));
   if (type.toLowerCase() === "sword") {
     for (let i = 0; i < data.features_blade.length; i++) {
       if (

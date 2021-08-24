@@ -37,7 +37,9 @@ router.get('/adventures', async (req, res) => {
   try {
     const adventures = await Adventure.find({});
     if (!adventures) 
-      res.status(500).send(resp(false, "There is a problem with the database"));
+      return res
+        .status(500)
+        .send(resp(false, "There is a problem with the database"));
 
     res.status(200).send(resp(true, adventures));
   } catch (err) {
@@ -51,7 +53,7 @@ router.get("/adventure/:id", async (req, res) => {
   try {
     const adventure = await Adventure.findOne({id});
     if (!adventure) 
-      res.status(500).send(resp(false, "Could not find adventure"));
+      return res.status(500).send(resp(false, "Could not find adventure"));
 
     res.status(200).send(resp(true, adventure));
   } catch (err) {
