@@ -72,4 +72,8 @@ router.delete("/delete/adventure/:id", async (req, res) => {
   }
 })
 
+router.post("/test", async (req, res) => {
+  res.status(200).send(req.body);
+})
+
 module.exports = router;
